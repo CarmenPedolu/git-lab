@@ -10,21 +10,7 @@ int main()
     cout << "Please enter a number" << endl;
     cin >> n;
 
-    srand((unsigned) time(NULL)); 
-
-    for (int i = 0; i <= 5; i++)
-    {
-        int rand_n = rand() % 200;
-
-        if (rand_n == 150)
-            n += 1;
-        else
-        {
-            i--;
-        }
-    }
-
-    cout << "Your number + 5 is: " << n << endl;
+    cout << "Your number + 5 is: " << n + 5 << endl;
 
     return 0;
 }
